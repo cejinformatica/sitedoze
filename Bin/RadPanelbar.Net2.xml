@@ -1,0 +1,2184 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RadPanelbar.Net2</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.WebControls.Design.Panelbar.ControlBuilderForm">
+            <summary>
+            Summary description for ControlBuilderForm.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.Design.Panelbar.ControlBuilderForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.Design.Panelbar.ControlBuilderForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.Ide.Common.RadPanelbar.ProjectManagement">
+            <summary>
+            Utility class for Design - Time VisualStudio.NET project management.
+            </summary>
+        </member>
+        <member name="T:Telerik.RadPanelbarUtils.PropertyCategory">
+            <summary>
+            Defines the common property categories' names
+            </summary>
+        </member>
+        <member name="P:Telerik.RadPanelbarUtils.RadControl.Version">
+            <summary>Gets the component's current version.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.ExpandEffect">
+            <summary>
+            Defines the different visual effects that are applied when PanelItems are
+            expanded or collapsed.
+            </summary>
+            <remarks>
+            These effects are supported only on Internet Explorer for Windows<sup>tm</sup>.
+            </remarks>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.None">
+            <summary>
+            No expand effect is applied.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Barn">
+            <summary>
+            Reveals new content of the object with a motion that resembles doors opening or closing.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Blinds">
+            <summary>
+            Reveals new content of the object with a motion that appears to open or close blinds.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.CheckerBoard">
+            <summary>
+            Reveals new content of the object by uncovering squares placed like a checkerboard over the original content.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Fade">
+            <summary>
+            Reveals new content of the object by fading out the original content.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.GradientWipe">
+            <summary>
+            Reveals new content of the object by passing a gradient band over the original content.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Inset">
+            <summary>
+            Reveals new content of the object diagonally.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Iris">
+            <summary>
+            Reveals new content of the object with an iris effect, similar to the opening of a camera aperture.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Pixelate">
+            <summary>
+            Displays the content of the object as colored squares that take the average color value of the pixels they replace. This filtered display can be used as a transition.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.RadialWipe">
+            <summary>
+            Reveals new content of the object with a radial wipe, like a windshield-wiper blade.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.RandomBars">
+            <summary>
+            Reveals new content of the object by exposing random lines of pixels.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.RandomDissolve">
+            <summary>
+            Reveals new content of the object by exposing random pixels.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Slide">
+            <summary>
+            Reveals new content of the object by sliding sections of the image into place.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Spiral">
+            <summary>
+            Reveals new content of the object with a spiral motion.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Stretch">
+            <summary>
+            Reveals new content of the object with a stretching motion to cover the original content. One option resembles a cube rotating from one face to another.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Strips">
+            <summary>
+            Reveals new content of the object by moving successive strips into place, like a diagonal saw blade passing across the original content.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Wheel">
+            <summary>
+            Reveals new content of the object with a rotating motion, like spokes of a wheel covering the original content.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ExpandEffect.Zigzag">
+            <summary>
+            Reveals new content of the object with a forward and back motion that moves down the object.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.PanelItemState">
+            <summary>Defines the different states of a PanelItem.</summary>
+        </member>
+        <member name="F:Telerik.WebControls.PanelItemState.Undefined">
+            <summary>
+            The PanelItem state is determined by the PanelItem's Expanded property.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.PanelItemState.Expanded">
+            <summary>
+            The PanelItem is expanded.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.PanelItemState.Collapsed">
+            <summary>
+            The PanelItem is collapsed.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.ImagePosition">
+            <summary>
+            Defines the different positions of an image relative to the content of a
+            PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.None">
+            <summary>
+            No image is rendered in the PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.TopLeft">
+            <summary>
+            The image is positioned at the top left corner of the PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.Top">
+            <summary>
+            The image is positioned at the top of the PanelItem and is centered.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.TopRight">
+            <summary>
+            The image is positioned at the top right corner of the PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.Right">
+            <summary>
+            The image is positioned to the right of the PanelItem and is vertically aligned in the middle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.BottomRight">
+            <summary>
+            The image is positioned to the bottom right corner of the PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.Bottom">
+            <summary>
+            The image is positioned at the bottom of the PanelItem and is centered.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.BottomLeft">
+            <summary>
+            The image is positioned to the bottom left corner of the PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.Left">
+            <summary>
+            The image is positioned to the left of the PanelItem and is vertically aligned in the middle.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.BeforeLabel">
+            <summary>
+            The image is positioned just before the text label of the PanelItem in the same TD tag.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.ImagePosition.AfterLabel">
+            <summary>
+            The image is positioned just after the text label of the PanelItem in the same TD tag.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.RadPanelbarClickEventArgs">
+            <summary>Provides data for any event that occurs when a user clicks on a PanelItem.</summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbarClickEventArgs.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/>
+                class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbarClickEventArgs.#ctor(Telerik.WebControls.PanelItem)">
+            <summary>
+                Initializes a new instance of the <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/>
+                class.
+            </summary>
+            <param name="clickedPanelItem">Reference to the PanelItem that was clicked by the user.</param>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbarClickEventArgs.ClickedPanelItem">
+            <summary>Gets a reference to the <see cref="T:Telerik.WebControls.PanelItem"/> that was clicked.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs">
+            <summary>Provides the data for the <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemDataBound"/> event.</summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs.#ctor">
+            <summary>
+                Initializes a new instance of the
+                <see cref="T:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs.#ctor(Telerik.WebControls.PanelItem,System.Data.DataRow)">
+            <summary>
+                Initializes a new instance of the
+                <see cref="T:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs"/> class.
+            </summary>
+            <param name="dataBoundPanelItem">A reference to the <see cref="T:Telerik.WebControls.PanelItem"/> that is databound.</param>
+            <param name="dataBoundDataRow">
+                A reference to the DataRow object to which the <see cref="T:Telerik.WebControls.PanelItem"/> is
+                databound.
+            </param>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs.DataBoundPanelItem">
+            <summary>Gets a reference to the <see cref="T:Telerik.WebControls.PanelItem"/> that is databound.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs.DataBoundDataRow">
+            <summary>
+                Gets a reference to the DataRow object to which the <see cref="T:Telerik.WebControls.PanelItem"/> is
+                databound.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbarPanelItemCreatedEventArgs.Item">
+            <summary>Gets a reference to the <see cref="T:Telerik.WebControls.PanelItem"/> that is created.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.ItemTemplate">
+            <summary>
+            The template container for a PanelItemTemplate instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.ItemTemplate.#ctor(Telerik.WebControls.PanelItem)">
+            <summary>Initializes a new instance of the <see cref="T:Telerik.WebControls.ItemTemplate"/> class.</summary>
+            <param name="Parent">The PanelItem where this template will be rendered.</param>
+        </member>
+        <member name="M:Telerik.WebControls.ItemTemplate.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:Telerik.WebControls.ItemTemplate"/> class.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.ItemTemplate.Attributes">
+            <summary>
+                Gets a name-value collection that holds all attributes of the
+                <see cref="T:Telerik.WebControls.PanelItem"/> container, where the <see cref="T:Telerik.WebControls.ItemTemplate"/>
+                is instantiated.
+            </summary>
+            <remarks>
+            The collection includes both custom attributes and strongly typed attributes
+            mapped to properties.
+            </remarks>
+        </member>
+        <member name="T:Telerik.WebControls.PanelItem">
+            <summary>
+            Summary description for PanelItem.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.#ctor">
+            <summary>Initializes a new instance of the PanelItem class.</summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.#ctor(System.Web.UI.Control,Telerik.WebControls.RadPanelbar)">
+            <summary>Initializes a new instance of the PanelItem class.</summary>
+            <param name="parentControl">
+            A reference to the parent control of the PanelItem. This may be the top
+            RadPanelbar object or another PanelItem.
+            </param>
+            <param name="parentPanelbar">A reference to the RadPanelbar control to which the PanelItem belongs.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.#ctor(System.Web.UI.Control,Telerik.WebControls.RadPanelbar,System.String)">
+            <summary>Initializes a new instance of the PanelItem class.</summary>
+            <param name="parentControl">
+            A reference to the parent control of the PanelItem. This may be the top
+            RadPanelbar object or another PanelItem.
+            </param>
+            <param name="parentPanelbar">A reference to the RadPanelbar control, to which the PanelItem belongs.</param>
+            <param name="id">The ID that will be used for the newly created PanelItem.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.DataBind">
+            <summary>This method gets called during simple databinding.</summary>
+            <remarks>
+            	<div class="codeOuter">
+            		<div class="code" id="codeContent">
+            			<para>The RadPanelbar allows you to use the simple data binding syntax to
+                        set any of the properties of the inline defined <strong>PanelItems</strong>
+                        during run time.</para>
+            			<para>One more feature is the possibility of using this syntax in the
+                        contents of templates. Using the
+                        <strong>Container.Attributes["Name"]</strong> expression you can access the
+                        values of any properties or custom attributes defined for the
+                        <strong>PanelItem</strong>, which contains the template.</para>
+            			<para>Don't forget to call Page.DataBind() to trigger the data
+                        binding.</para>
+            		</div>
+            	</div>
+            </remarks>
+            <example>
+            	<code lang="CS" title="CS Example">
+            //ASPX
+             
+            &lt;script runat="server"&gt;
+            public string strWeekDay = "Today is " + System.DateTime.Now.DayOfWeek.ToString();
+            public string strDate = "The date is " + System.DateTime.Now.ToString("MM/dd/yyyy");
+            public string strTime = "The time is " + System.DateTime.Now.ToString("HH:mm:ss");
+            &lt;/script&gt;
+            &lt;radP:RadPanelbar 
+                ID="RadPanelbar1" 
+                Runat="server"
+                CssFile="~/Panelbar/Examples/Programming/SimpleDataBinding/Panelbar.css"
+                HeaderExpandedCssClass="panelbarHeaderExpand"
+                HeaderCollapsedCssClass="panelbarHeader"
+                HeaderHoverCollapsedCssClass="panelbarHeaderHover"
+                HeaderHoverExpandedCssClass="panelbarHeaderHover"
+                ItemCollapsedCssClass="panelbarItem"
+                ItemHoverCollapsedCssClass="panelbarItemSelected"
+                Width="300px"
+                &gt;
+            &lt;PanelItems&gt;
+            &lt;radP:PanelItem ID="Panel1" Text="Dynamic Content" Expanded="True"&gt;
+            &lt;radP:PanelItem ID="Panel1_1" Text="&lt;%# strWeekDay %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel1_2" Text="&lt;%# strDate %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel1_3" Text="&lt;%# strTime %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel2" Text="In Template" Expanded="True"&gt;
+            &lt;radP:PanelItem ID="Panel2_1" Text="" TemplateID="Template1" ItemHoverCollapsedCssClass="panelbarItem"&gt;&lt;/radP:PanelItem&gt;
+            &lt;/radP:PanelItem&gt;
+            &lt;/PanelItems&gt;
+             
+            &lt;PanelItemTemplates&gt;
+            &lt;radP:PanelItemTemplate ID="Template1"&gt;
+            &lt;ContentTemplate&gt;
+            Everything in one place:&lt;br /&gt;&lt;br /&gt;
+            &lt;%# strWeekDay %&gt;&lt;br /&gt;
+            &lt;%# strDate %&gt;&lt;br /&gt;
+            &lt;%# strTime %&gt;&lt;br /&gt;&lt;br /&gt;
+            The ID of this template's container is &lt;%# Container.Attributes["ID"] %&gt;
+            &lt;/ContentTemplate&gt;
+            &lt;/radP:PanelItemTemplate&gt;
+            &lt;/PanelItemTemplates&gt;
+            &lt;/radP:RadPanelbar&gt;
+             
+             
+            //in code-behind
+            private void Page_Load(object sender, System.EventArgs e)
+            {
+                Page.DataBind();
+            }
+                </code>
+            	<code lang="VB" title="VB Example">
+            //ASPX
+             
+            &lt;script runat="server"&gt;
+            Public String strWeekDay = "Today is " + System.DateTime.Now.DayOfWeek.ToString();
+            Public String strDate = "The date is " + System.DateTime.Now.ToString("MM/dd/yyyy");
+            Public String strTime = "The time is " + System.DateTime.Now.ToString("HH:mm:ss");
+            &lt;/script&gt;
+            &lt;radP:RadPanelbar 
+                ID="RadPanelbar1" 
+                Runat="server"
+                CssFile="~/Panelbar/Examples/Programming/SimpleDataBinding/Panelbar.css"
+                HeaderExpandedCssClass="panelbarHeaderExpand"
+                HeaderCollapsedCssClass="panelbarHeader"
+                HeaderHoverCollapsedCssClass="panelbarHeaderHover"
+                HeaderHoverExpandedCssClass="panelbarHeaderHover"
+                ItemCollapsedCssClass="panelbarItem"
+                ItemHoverCollapsedCssClass="panelbarItemSelected"
+                Width="300px"
+                &gt;
+            &lt;PanelItems&gt;
+            &lt;radP:PanelItem ID="Panel1" Text="Dynamic Content" Expanded="True"&gt;
+            &lt;radP:PanelItem ID="Panel1_1" Text="&lt;%# strWeekDay %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel1_2" Text="&lt;%# strDate %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel1_3" Text="&lt;%# strTime %&gt;"&gt;&lt;/radP:PanelItem&gt;
+            &lt;/radP:PanelItem&gt;
+            &lt;radP:PanelItem ID="Panel2" Text="In Template" Expanded="True"&gt;
+            &lt;radP:PanelItem ID="Panel2_1" Text="" TemplateID="Template1" ItemHoverCollapsedCssClass="panelbarItem"&gt;&lt;/radP:PanelItem&gt;
+            &lt;/radP:PanelItem&gt;
+            &lt;/PanelItems&gt;
+             
+            &lt;PanelItemTemplates&gt;
+            &lt;radP:PanelItemTemplate ID="Template1"&gt;
+            &lt;ContentTemplate&gt;
+            Everything In one place:&lt;br /&gt;&lt;br /&gt;
+            &lt;%# strWeekDay %&gt;&lt;br /&gt;
+            &lt;%# strDate %&gt;&lt;br /&gt;
+            &lt;%# strTime %&gt;&lt;br /&gt;&lt;br /&gt;
+            The ID of this template's container is &lt;%# Container.Attributes["ID"] %&gt;
+            &lt;/ContentTemplate&gt;
+            &lt;/radP:PanelItemTemplate&gt;
+            &lt;/PanelItemTemplates&gt;
+            &lt;/radP:RadPanelbar&gt;
+             
+            //In code-behind
+            Private Sub Page_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+            Page.DataBind()
+            End Sub
+                </code>
+            </example>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Renders the PanelItem.
+            </summary>
+            <param name="output">The HtmlTextWriter class used when rendering.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.GetAttribute(System.String)">
+            <summary>Retrieves the specified custom attribute from the Attributes collection.</summary>
+            <returns>The value of the custom attribute.</returns>
+            <param name="key">The name of the custom attribute.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItem.SetAttribute(System.String,System.String)">
+            <summary>Sets a value for the specified attribute in the Attributes collection.</summary>
+            <param name="key">The name of the custom attribute.</param>
+            <param name="value">The value of the custom attribute.</param>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ID">
+            <summary>
+            Gets or sets the programmatic identifier assigned to the PanelItem.
+            </summary>
+            <remarks>
+            The programmatic identifier assigned to the control. If you don't specify an ID,
+            the RadPanelbar will assign a service ID to the PanelItem in the PreRender
+            phase.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Text">
+            <summary>Gets or sets the PanelItem text.</summary>
+            <remarks>
+            The trailing spaces are rendered as non-breaking spaces and more specifically as
+            code (xHTML compliant). Thus you can indent the items to the right or to the left by
+            putting empty spaces in from the text.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Value">
+            <summary>Gets or sets a value that is available both on client and server side.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.PanelItems">
+            <summary>Gets the collection of child PanelItems inside the <see cref="T:Telerik.WebControls.PanelItem"/>.</summary>
+            <remarks>
+            You may access elements in this collection by using integer indexes or by
+            specifying and ID of a PanelItem.
+            </remarks>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Telerik.WebControls.PanelItem.AccessKey" -->
+        <member name="P:Telerik.WebControls.PanelItem.Attributes">
+            <summary>Gets a name-value collection that holds all attributes of the PanelItem.</summary>
+            <example>
+                Here the CustomTag attribute is added to the Attributes collection of the
+                PanelItem, while the ID attribute is mapped to its ID property. 
+                <code lang="CS">
+            &lt;PanelItems&gt;
+            &lt;radP:PanelItem ID="Panel1" CustomTag="CustomValue"&gt;&lt;/radP:PanelItem&gt;
+            &lt;/PanelItems&gt;
+                </code>
+            </example>
+            <remarks>
+            The collection includes both custom attributes and strongly typed attributes
+            mapped to properties.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the PanelItem if it is level 2 or above.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextCollapsedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. If this property is not defined
+                the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderCollapsedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemCollapsedCssClass"/> properties
+                of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the PanelItem at level 2 or above if it is expanded.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextExpandedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. If this property is not defined
+                the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderExpandedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemExpandedCssClass"/> properties
+                of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the disabled PanelItem at level 2 or above.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextDisabledCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. If this property is not defined
+                the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderDisabledCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemDisabledCssClass"/> properties
+                of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the PanelItem when it is collapsed and the mouse is over it.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverCollapsedCssClass"/> property, which applies
+                to the TD tag where the text of the item is rendered. If this property is not
+                defined the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderHoverCollapsedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemHoverCollapsedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the PanelItem when it is expanded and the mouse is over it.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverExpandedCssClass"/> property, which applies
+                to the TD tag where the text of the item is rendered. If this property is not
+                defined the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderHoverExpandedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemHoverExpandedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the PanelItem when it is selected.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextSelectedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. If this property is not defined
+                the PanelItem inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderSelectedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemSelectedCssClass"/> properties
+                of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is level 2 or above.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemCollapsedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextCollapsedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextCollapsedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is level 2 or above and is expanded.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemExpandedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextExpandedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextExpandedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is level 2 or above and is disabled.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemDisabledCssClass"/> property, which applies to
+                the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextDisabledCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextDisabledCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is collapsed and it is level 2 or above and the mouse moves over it.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemHoverCollapsedCssClass"/> property, which applies
+                to the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverCollapsedCssClass"/>
+                or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextHoverCollapsedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is expanded and it is level 2 or above and the mouse moves over it.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemHoverExpandedCssClass"/> property, which applies
+                to the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverExpandedCssClass"/>
+                or <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextHoverExpandedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ItemTextSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the PanelItem if it is level 2 or above and is selected.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.PanelItem.ItemSelectedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. If this property is not defined the PanelItem
+                inherits the value of the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextSelectedCssClass"/> or
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextSelectedCssClass"/>
+                properties of its RadPanelbar container depending on its level.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImagePosition">
+            <summary>Gets or sets the image position relative to the content of the PanelItem.</summary>
+            <remarks>
+            This property overrides the parent's RadPanelbar HeaderImagePosition and ItemImagePosition properties depending on whether this PanelItem is at level 1 or at level 2+.
+            </remarks>
+            <value>
+                An <see cref="P:Telerik.WebControls.PanelItem.ImagePosition"/> that represents the image position relative to
+                the content of the PanelItem. The default is <strong>ImagePosition.None</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageCollapsed">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when it is collapsed or doesn't have child PanelItems.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageExpanded">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when it is expanded.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageDisabled">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when it is disabled.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageHoverCollapsed">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when the mouse is over it and it is collapsed.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageHoverExpanded">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when the mouse is over it and it is expanded.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ImageSelected">
+            <summary>
+            Gets or sets the name of the image that will be displayed in the PanelItem when it is selected.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageCollapsed">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when it is collapsed.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageExpanded">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when it is expanded.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageDisabled">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when it is disabled.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageHoverCollapsed">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when the mouse is over it and it is collapsed.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageHoverExpanded">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when the mouse is over it and it is expanded.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.BackgroundImageSelected">
+            <summary>
+            Gets or sets the name of the image that will be displayed as background of the PanelItem when it is selected.
+            </summary>
+            <remarks>
+            If the parent RadPanelbar's ImagesBaseDir is set it is used in the forming of the final path to the image.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ExpandEffect">
+            <summary>
+            Gets or sets the visual effect that is applied to the PanelItem when it is
+            expanded or collapsed.
+            </summary>
+            <remarks>
+            This property applies only to the specific PanelItem, but you can globally assign the expand effect with the ExpandEffect property of the parent RadPanelbar.
+            This effect is supported only on Internet Explorer for Windows<sup>tm</sup>.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Expanded">
+            <summary>Gets or sets a value indicating whether the PanelItem is expanded.</summary>
+            <value>
+            	<strong>true</strong> if the PanelItem is expanded; otherwise,
+            <strong>false</strong>. The default is <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Enabled">
+            <summary>Gets or sets a value indicating whether the PanelItem is enabled.</summary>
+            <value>
+            	<strong>true</strong> if the PanelItem is enabled; otherwise,
+            <strong>false</strong>. The default is <strong>true</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Selected">
+            <summary>Gets or sets a value indicating whether the PanelItem is selected.</summary>
+            <value>
+            	<strong>true</strong> if the PanelItem is selected; otherwise,
+            <strong>false</strong>. The default is <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.NavigateUrl">
+            <summary>
+            Gets or sets the URL of the page to navigate to when this PanelItem is clicked.
+            </summary>
+            <remarks>
+                Navigation is cancelled if the JavaScript functions specified in the RadPanelbar's
+                properties <see cref="!:RadPanelbar.AfterClientPanelItemExpanded"/> or
+                <see cref="!:RadPanelbar.AfterClientPanelItemCollapsed"/> return
+                <strong>false</strong>.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Target">
+            <summary>
+                Gets or sets the name of the browser window or frame that displays the contents of
+                the Web page specified by the <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/> property of the
+                PanelItem.
+            </summary>
+            <remarks>
+            If NavigateUrl is not set this property is ignored.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Visible">
+            <summary>Gets or sets a value indicating whether the PanelItem will be rendered.</summary>
+            <value>
+            	<strong>true</strong> if the PanelItem is rendered; otherwise,
+            <strong>false</strong>. The default is <strong>true</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.TemplateID">
+            <summary>
+            Gets or sets the ID of the PanelItemTemplate that will be rendered instead of the
+            PanelItem.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ToolTip">
+            <summary>
+            Gets or sets the text displayed when the mouse pointer hovers over the
+            PanelItem.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Height">
+            <summary>
+            Gets or sets the height of the PanelItem.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.SubGroupHeight">
+            <summary>
+            Get or sets the actual height of the subgroup defined by any child PanelItems
+            within this PanelItem.
+            </summary>
+            <remarks>
+            If this value is smaller that the real height of the group, a scrollbar will appear to the right.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.SubGroupCssClass">
+            <summary>
+            Gets or sets the CSS class applied to the subgroup defined by any child
+            PanelItems within this PanelItem.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.UseClientEventsForTemplate">
+            <summary>
+            Gets or sets a value indicating whether the content of the template will receive
+            client-side JavaScript events like onmouseover, onmouseout and onclick if the PanelItem
+            uses a template instead of simple text.
+            </summary>
+            <value>
+            	<strong>true</strong> if the content of the template receives client-side
+            JavaScript events; otherwise, <strong>false</strong>. The default is
+            <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.RadPanelbar">
+            <summary>Gets a reference to the topmost RadPanelbar object.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.ParentItem">
+            <summary>
+            Gets a reference to the parent control of the PanelItem. This might be the top
+            level RadPanelbar object or another PanelItem.
+            </summary>
+            <remarks>
+            You may use the "is" operator ("Is" operator in Visual Basic) to check what is
+            the type of the parent control.
+            </remarks>
+            <example>
+            	<code lang="CS" title="[New Example]">
+            if (thisItem.ParentItem is PanelItem) 
+            { 
+                // implementation goes here
+            }
+                </code>
+            </example>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Controls">
+            <summary>Gets the Controls collection of the PanelItem.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItem.Container">
+            <summary>
+            Used by r.a.d.panelbar internally. Do not modify directly.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.PanelItems">
+            <summary>
+            A collection of the children PanelItem objects in the PanelItem or
+            RadPanelbar.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.#ctor(System.Web.UI.Control,Telerik.WebControls.RadPanelbar)">
+            <summary>Initializes a new instance of the PanelItems class.</summary>
+            <param name="parentControl">The parent Control of the collection.</param>
+            <param name="parentRadPanelbar">The RadPanelbar control to which this collection belongs.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.Add(Telerik.WebControls.PanelItem)">
+            <summary>
+            Adds a new PanelItem object to the collection.
+            </summary>
+            <param name="panelItem">The PanelItem object to add.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.AddRange(Telerik.WebControls.PanelItem[])">
+            <summary>
+            Adds multiple PanelItem objects to the collection.
+            </summary>
+            <param name="panelItems">The list of PanelItem objects to add.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.Clear">
+            <summary>
+            Removes all PanelItem objects from the list.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.Contains(Telerik.WebControls.PanelItem)">
+            <summary>
+            Checks whether the passed as argument PanelItem object exists in the collection.
+            </summary>
+            <param name="panelItem">The PanelItem to search for.</param>
+            <returns>True of the PanelItem object is found, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.IndexOf(System.Object)">
+            <summary>
+            Returns the absolute index of a PanelItem object inside the collection.
+            </summary>
+            <param name="obj">An integer or string value by which the PanelItem is searched in the collection.</param>
+            <returns>An zero-based integer equal to the index of the PanelItem in the collection or -1 if the PanelItem is not in the collection.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.Insert(System.Int32,Telerik.WebControls.PanelItem)">
+            <summary>
+            Inserts a PanelItem object in the collection at the specified position.
+            </summary>
+            <param name="index">The zero-based index at which the PanelItem should be inserted.</param>
+            <param name="panelItem">The PanelItem to insert.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.Remove(Telerik.WebControls.PanelItem)">
+            <summary>
+            Removes a PanelItem object from the collection.
+            </summary>
+            <param name="panelItem">The PanelItem object to remove.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItems.RemoveAt(System.Int32)">
+            <summary>
+            Removes the PanelItem object at the specified position.
+            </summary>
+            <param name="index">The zero-based index in the collection, which will be removed.</param>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItems.Item(System.Object)">
+            <summary>Gets a reference to a PanelItem object in the collection.</summary>
+            <remarks>
+            The indexer may be an absolute integer value or a string ID that corresponds to the ID property of the PanelItem.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItems.Count">
+            <summary>Gets the number of the PanelItem objects in the collection.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.PanelItemTemplate">
+            <summary>This class is a wrapper class for the ItemTemplate class.</summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplate.#ctor">
+            <summary>Initializes a new instance of the PanelItemTemplate class.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItemTemplate.ContentTemplate">
+            <summary>Gets or sets a reference to the PanelItem content template.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.PanelItemTemplates">
+            <summary>A collection of the PanelItemTemplates for a RadPanelbar.</summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.#ctor(Telerik.WebControls.RadPanelbar)">
+            <summary>Initializes a new instance of the PanelItemTemplates class.</summary>
+            <param name="parent">The parent RadPannelbar of the collection.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.Add(Telerik.WebControls.PanelItemTemplate)">
+            <summary>
+            Adds a new PanelItemTemplate object to the collection.
+            </summary>
+            <param name="panelItemTemplate">The PanelItemTemplate object to add.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.AddRange(Telerik.WebControls.PanelItemTemplate[])">
+            <summary>
+            Adds multiple PanelItemTemplate objects to the collection.
+            </summary>
+            <param name="panelItemTemplates">The list of PanelItemTemplate objects to add.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.Clear">
+            <summary>
+            Removes all PanelItemTemplate objects from the list.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.Contains(Telerik.WebControls.PanelItemTemplate)">
+            <summary>
+            Checks whether the passed as argument PanelItemTemplate object exists in the collection.
+            </summary>
+            <param name="panelItemTemplate">The PanelItemTemplate to search for.</param>
+            <returns>True of the PanelItemTemplate object is found, false otherwise.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.IndexOf(System.Object)">
+            <summary>
+            Returns the absolute index of a PanelItemTemplate object inside the collection.
+            </summary>
+            <returns>
+            A zero-based integer equal to the index of the PanelItemTemplate in the
+            collection or -1 if the PanelItemTemplate is not in the collection.
+            </returns>
+            <param name="obj">An integer or string value by which the PanelItemTemplate is searched in the collection.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.Insert(System.Int32,Telerik.WebControls.PanelItemTemplate)">
+            <summary>
+            Inserts a PanelItemTemplate object in the collection at the specified position.
+            </summary>
+            <param name="index">The zero-based index at which the PanelItemTemplate should be inserted.</param>
+            <param name="panelItemTemplate">The PanelItemTemplate to insert.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.Remove(Telerik.WebControls.PanelItemTemplate)">
+            <summary>
+            Removes a PanelItemTemplate object from the collection.
+            </summary>
+            <param name="panelItemTemplate">The PanelItemTemplate object to remove.</param>
+        </member>
+        <member name="M:Telerik.WebControls.PanelItemTemplates.RemoveAt(System.Int32)">
+            <summary>
+            Removes the PanelItemTemplate object at the specified position.
+            </summary>
+            <param name="index">The zero-based index in the collection, which will be removed.</param>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItemTemplates.Item(System.Object)">
+            <summary>Gets a reference to a PanelItemTemplate object in the collection.</summary>
+            <remarks>
+            The indexer may be an absolute integer value or a string ID that corresponds to the ID property of the PanelItemTemplate.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.PanelItemTemplates.Count">
+            <summary>Gets the number of the PanelItemTemplate objects in the collection.</summary>
+        </member>
+        <member name="T:Telerik.WebControls.RadPanelbar">
+            <summary>
+            The Telerik RadPanelbar web control.
+            </summary>
+            <remarks>
+            The <b>Telerik RadPanelbar</b> web control is a versatile component for building collapsible side-menu systems.
+            </remarks>
+        </member>
+        <member name="F:Telerik.WebControls.RadPanelbar.SelectedPanelItemID">
+            <summary>
+            The ID of the currently selected PanelItem.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.RadPanelbar.DataTableColumns">
+            <summary>
+            When databinding to a DataTable or DataSet gets the names of the columns in the used DataTable.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.RadPanelbar.PanelItemUrls">
+            <summary>
+            A list of NavigateUrls set in PanelItems that will be render in a NOSCRIPT tag for the search bots.
+            </summary>
+        </member>
+        <member name="F:Telerik.WebControls.RadPanelbar._DataSource">
+            <summary>
+            The data source.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.#ctor">
+            <summary>Initializes a new instance of the RadPanelbar class.</summary>
+            <remarks>
+            Use this constructor to create and initialize a new instance of the RadPanelbar
+            class.
+            </remarks>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.#ctor(System.String)">
+            <summary>Initializes a new instance of the RadPanelbar class with the specified ID.</summary>
+            <remarks>
+            Use this constructor to create and initialize a new instance of the RadPanelbar
+            class with the specified ID.
+            </remarks>
+            <param name="id"> The ID of the RadPanelbar to be created. </param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.SaveViewState">
+            <summary>
+            Saves any server control view-state changes that have occurred since the time the page was posted back to the server.
+            </summary>
+            <returns>The saved view state.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.LoadViewState(System.Object)">
+            <summary>
+            Restores view-state information from a previous page request that was saved by the <see cref="M:Telerik.WebControls.RadPanelbar.SaveViewState">SaveViewState</see> method.
+            </summary>
+            <param name="savedState">The saved view state.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.LoadContentFromXmlFile(System.String)">
+            <summary>Loads the RadPanelbar structure from an XML file.</summary>
+            <param name="XmlDefinitionFile">The name of the XML definition file.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.RecursiveXmlRead(System.Web.UI.Control,Telerik.WebControls.PanelItems,System.Xml.XmlNodeList)">
+            <summary>
+            Recuresively reads the XML PanelItem nodes and builds the PanelItems hierarchy.
+            </summary>
+            <param name="parent">The current parent control.</param>
+            <param name="items">The PanelItems collection to which to load the read PanelItem nodes.</param>
+            <param name="xmlChildNodes">The XML nodes to read.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.LoadContentFromXmlString(System.String)">
+            <summary>Loads the RadPanelbar structure from an XML string.</summary>
+            <remarks>
+            The string must be valid XML, and must use the same syntax as the regular
+            panelbar content files. This method allows you to load the RadPanelbar from dynamically
+            created content (for example from a database).
+            </remarks>
+            <param name="xmlString">The XML string with the content definition.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.RecursiveGetXmlRepresentation(System.Xml.XmlDocument,System.Xml.XmlElement,Telerik.WebControls.PanelItems)">
+            <summary>
+            Recursively builds a XML document from the PanelItems collections.
+            </summary>
+            <param name="xmlDoc">The XmlDocument object to write to.</param>
+            <param name="parentElement">The current parent element.</param>
+            <param name="panelItems">The current PanelItems collection.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.GetXmlRepresentation">
+            <summary>
+            Returns a string with the XML representation of the current RadPanelbar state.
+            </summary>
+            <returns>The XML string.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.OnInit(System.EventArgs)">
+            <summary>
+            Raises the Init event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs">EventArgs</see> object that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.CreateChildControls">
+            <summary>
+            Notifies server controls that use composition-based implementation to create any child controls they contain in preparation for posting back or rendering.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.FindControlEx(System.String,System.Web.UI.ControlCollection)">
+            <summary>
+            Recursively searches for a control with the specified id in the passed PanelItems collection.
+            </summary>
+            <param name="id">The id of the control to look for.</param>
+            <param name="controls">The current ControlCollection collection to search in.</param>
+            <returns>The found control or null if nothig was found.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.FindControl(System.String)">
+            <summary>
+            Finds a control inside the control hierarchy.
+            </summary>
+            <returns>Reference to the found control or null if no control was found.</returns>
+            <remarks>
+                The <see cref="M:Telerik.WebControls.RadPanelbar.FindControl(System.String)"/> method provides you with a reference to any
+                control inside any of the templates used in the r.a.d.panelbar or any of its
+                PanelItems. You must make sure that you properly typecast the returned value as
+                <see cref="M:Telerik.WebControls.RadPanelbar.FindControl(System.String)"/> returns a reference to a Control class.
+            </remarks>
+            <param name="id">The ID of the searched control.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.FindPanelItemByIdEx(System.String,Telerik.WebControls.PanelItems)">
+            <summary>
+            Recursively searches for a PanelItem with the specified id in the passed PanelItems collection.
+            </summary>
+            <param name="id">The id of the PanelItem to look for.</param>
+            <param name="panelItems">The current PanelItems collection to search in.</param>
+            <returns>The found PanelItem or null if nothig was found.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.FindPanelItemById(System.String)">
+            <summary>
+            Finds a PanelItem inside the RadPanelbar hierarchy.
+            </summary>
+            <param name="id">The ID of the searched PanelItem.</param>
+            <returns>Reference to the found PanelItem or null if no PanelItem was found.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.DataBind">
+            <summary>
+                Binds the RadPanelbar to the data source specified by the
+                <see cref="P:Telerik.WebControls.RadPanelbar.DataSource"/> property.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.GetOutputHtmlString">
+            <summary>
+            Builds the output HTML string of the Panelbar.
+            </summary>
+            <returns>The output HTML string of the Panelbar.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.Render(System.Web.UI.HtmlTextWriter)">
+            <summary>
+            Render this control to the output parameter specified.
+            </summary>
+            <param name="output"> The HTML writer to write out to </param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.QuoteJScriptString(System.String)">
+            <summary>
+            Escapes a text that will be enclosed in JavaScript single or double quotes.
+            </summary>
+            <param name="Value">The input string.</param>
+            <returns>The escaped string.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.GetRecursiveJSChildPanelItems(System.Web.UI.Control,Telerik.WebControls.PanelItems)">
+            <summary>
+            Builds a recursive JavaScript initialization code for the PanelItems and their successors of the RadPanelbar.
+            </summary>
+            <param name="parent">The current parent RadPanelbar or PanelItem.</param>
+            <param name="panelItems">The current PanelItems.</param>
+            <returns>A valid JavaScript code to init the objects.</returns>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.OnPanelItemExpand(Telerik.WebControls.RadPanelbarClickEventArgs)">
+            <summary>Raises the PanelItemExpand event.</summary>
+            <param name="args">A <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.OnPanelItemCollapse(Telerik.WebControls.RadPanelbarClickEventArgs)">
+            <summary>Raises the PanelItemCollapse event.</summary>
+            <param name="args">A <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.OnPanelItemClick(Telerik.WebControls.RadPanelbarClickEventArgs)">
+            <summary>Raises the PanelItemClick event.</summary>
+            <param name="args">A <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/> object that contains the event data.</param>
+        </member>
+        <member name="M:Telerik.WebControls.RadPanelbar.OnPanelItemDataBound(Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs)">
+            <summary>Raises the PanelItemDataBound event.</summary>
+            <param name="args">
+                A <see cref="T:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs"/> object that contains
+                the event data.
+            </param>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ID">
+            <summary>
+            Gets or sets the programmatic identifier assigned to the RadPanelbar.
+            </summary>
+            <remarks>
+            Setting this property provides you with programmatic access to the server
+            control's properties, events, and methods. This property can be set by Web developers
+            by declaring an ID attribute in the opening tag of a RadPanelbar control.
+            </remarks>
+            <example>
+            	<code lang="CS">
+            protected Telerik.WebControls.RadPanelbar   RadPanelbar1;
+            protected System.Web.UI.WebControls.TextBox TextBox1;
+             
+            void Page_Load(object sender, EventArgs e)
+            {
+                // Set the value of TextBox1 to the ID of RadPanebar1;
+                TextBox1.Text = RadPanelbar1.ID;
+            }
+                </code>
+            </example>
+            <seealso cref="T:Telerik.WebControls.RadPanelbar"/>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AutoPostBack">
+            <summary>
+            Gets or sets a value indicating whether a postback to the server automatically
+            occurs when the user clicks on a PanelItem with no child PanelItems.
+            </summary>
+            <value>
+            	<strong>true</strong> if a postback to the server automatically occurs whenever
+            the user clicks on a PanelItem; otherwise, <b>false</b>. The default is
+            <b>false</b>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AutoPostBackOnExpandCollapse">
+            <summary>
+            Gets or sets a value indicating whether a postback to the server automatically
+            occurs when the user expands or collapses a PanelItem with child PanelItems.
+            </summary>
+            <value>
+            	<strong>true</strong> if a postback to the server automatically occurs whenever
+            the user expands or collapses a PanelItem; otherwise, <b>false</b>. The default is
+            <b>false</b>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.CausesValidation">
+            <summary>
+            Gets or sets a value indicating whether validation occurs when the user clicks on
+            a PanelItem.
+            </summary>
+            <value>
+            	<strong>true</strong> if validation occurs whenever the user clicks on a
+            PanelItem; otherwise, <b>false</b>. The default is <b>true</b>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ValidationGroup">
+            <summary>
+            	<para><font color="red">Note: This property is new in the .NET Framework version
+                2.0.</font></para>
+            	<para>Gets or sets the name of the validation group to which this validation
+                control belongs.</para>
+            </summary>
+            <value>
+            The name of the validation group to which this validation control belongs. The
+            default is an empty string, which indicates that this property is not set.
+            </value>
+            <remarks>
+                This property works only when <see cref="P:Telerik.WebControls.RadPanelbar.CausesValidation">CausesValidation</see>
+                is set to true.
+            </remarks>
+            
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.PostBackUrl">
+            <summary>
+            	<para>Gets or sets the URL of the page to post to from the current page when a panel item
+                from the panelbar is clicked.</para>
+            </summary>
+            <value>
+            The URL of the Web page to post to from the current page when a panel item from the
+            panelbar control is clicked. The default value is an empty string, which causes
+            the page to post back to itself.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.PersistStateInCookie">
+            <summary>
+            Gets or sets a value indicating whether the Expanded state of PanelItems will be
+            persisted between different pages in a cookie.
+            </summary>
+            <remarks>
+                When this property is enabled RadPanelbar will try to save the changed
+                expanded/collapsed state of its PanelItems in a cookie. If you use the
+                <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/> property to navigate between multiple
+                pages that contain a RadPanelbar make sure you use the same ID in all pages. If
+                <see cref="P:Telerik.WebControls.RadPanelbar.AutoPostBackOnExpandCollapse"/> is
+                <strong>true</strong>, this property is ignored.
+            </remarks>
+            <value>
+            	<strong>true</strong> if the Expanded state of PanelItems is persisted between
+            different pages in a cookie; otherwise, <b>false</b>. The default is
+            <b>false</b>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ContentFile">
+            <summary>
+            Gets or sets a value that specifies the relative path to the RadPanelbar XML
+            content file. Use "~/" (tilde) as a substitution for the web-application root
+            directory.
+            </summary>
+            <remarks>
+            If you do not specify an XML content file you may still programmatically create a
+            RadPanelbar.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Enabled">
+            <summary>Gets or sets a value indicating whether the RadPanelbar is enabled.</summary>
+            <value>
+            	<strong>true</strong> if the RadPanelbar is enabled; otherwise,
+            <strong>false</strong>. The default is <strong>true</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.NavigateBaseUrl">
+            <summary>
+                Gets or sets the base url address to which the individual
+                <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/> values of PanelItems are appended.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.PanelItems">
+            <summary>Gets the collection of first level PanelItems inside the RadPanelbar.</summary>
+            <remarks>
+                You may access elements this collection by using integer indexes or by specifying
+                and <see cref="P:Telerik.WebControls.PanelItem.ID"/> of a PanelItem.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.PanelItemTemplates">
+            <summary>Gets the collection of PanelItemTemplates for the RadPanelbar.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ImagesBaseDir">
+            <summary>
+            Gets or sets the directory where image files used in the RadPanelbar reside. Use "~/" (tilde) as a substitution of the web-application root directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderImagePosition">
+            <summary>Gets or sets the default image position for level 1 PanelItems.</summary>
+            <remarks>
+            	<para>
+                    This value is applied to all level 1 PanelItems. You may still override this
+                    value for every individual PanelItem with its
+                    <see cref="P:Telerik.WebControls.PanelItem.ImagePosition"/> property.
+                </para>
+            </remarks>
+            <value>
+                An <see cref="T:Telerik.WebControls.ImagePosition"/> that represents the default image position for
+                level 1 PanelItems. The default is <strong>ImagePosition.Left</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemImagePosition">
+            <summary>
+            Gets or sets the default image position for PanelItems at level 2 or
+            above.
+            </summary>
+            <remarks>
+                This value is applied to PanelItems at level 2 or above. You may still override
+                this value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ImagePosition"/> property.
+            </remarks>
+            <value>
+                An <see cref="T:Telerik.WebControls.ImagePosition">ImagePosition</see> that represents the default image
+                position for PanelItems at level 2 or above. The default is
+                <strong>ImagePosition.Left</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.CssFile">
+            <summary>
+            Gets or sets the filename containing the CSS definition used by the RadPanelbar.
+            Use "~/" (tilde) as a substitution of the web-application root directory.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.CssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the main TABLE tag of the RadPanelbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the level 1 headers
+            of the RadPanelbar when they are collapsed.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextCollapsedCssClass"/> property, which applies
+                to the TD tag where the text of the header is rendered. This class applies globally
+                to all collapsed level 1 headers of the RadPanelbar, but you may still override
+                this value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the level 1 headers of the RadPanelbar when they are expanded.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextExpandedCssClass"/> property, which applies
+                to the TD tag where the text of the header is rendered. This class applies globally
+                to all expanded level 1 headers of the RadPanelbar, but you may still override this
+                value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemExpandedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the disabled level 1 headers of the RadPanelbar.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the disabled header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextDisabledCssClass"/> property, which applies
+                to the TD tag where the text of the header is rendered. This class applies globally
+                to all level 1 disabled headers of the RadPanelbar, but you may still override this
+                value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemDisabledCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the collapsed level
+            1 headers of the RadPanelbar when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverCollapsedCssClass"/> property, which
+                applies to the TD tag where the text of the header is rendered. This class applies
+                globally to all level 1 headers of the RadPanelbar, but you may still override this
+                value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemHoverCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the expanded level
+            1 headers of the RadPanelbar when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverExpandedCssClass"/> property, which
+                applies to the TD tag where the text of the header is rendered. This class applies
+                globally to all level 1 headers of the RadPanelbar, but you may still override this
+                value for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemHoverExpandedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the level 1 headers of the RadPanelbar when they are selected.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the header. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.HeaderTextSelectedCssClass"/> property, which applies
+                to the TD tag where the text of the header is rendered. This class applies globally
+                to all level 1 headers of the RadPanelbar, but you may still override this value
+                for every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemSelectedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the collapsed level 1 headers of the RadPanelbar.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderCollapsedCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the expanded level 1 headers of the RadPanelbar.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderExpandedCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemTextExpandedCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the disabled level 1 headers of the RadPanelbar.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderDisabledCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemTextDisabledCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the
+            collapsed level 1 headers of the RadPanelbar when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderHoverCollapsedCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the
+            expanded level 1 headers of the RadPanelbar when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderHoverExpandedCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverExpandedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.HeaderTextSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the level 1 headers of the RadPanelbar when they are selected.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the header is rendered. You may
+                set the <see cref="P:Telerik.WebControls.RadPanelbar.HeaderSelectedCssClass"/> property, which
+                applies to the TABLE tag of the whole header. This class applies globally to all
+                level 1 headers of the RadPanelbar, but you may still override this value for every
+                individual PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemTextSelectedCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the collapsed items
+            above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextCollapsedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. This class applies globally to
+                all items above level 1, but you may still override this value for every individual
+                PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the expanded items above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextExpandedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. This class applies globally to
+                all expanded items above level 1, but you may still override this value for every
+                individual PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemExpandedCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the disabled items above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextDisabledCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. This class applies globally to
+                all disabled items above level 1, but you may still override this value for every
+                individual PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemDisabledCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the collapsed items
+            above level 1 when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextHoverCollapsedCssClass"/> property, which
+                applies to the TD tag where the text of the item is rendered. This class applies
+                globally to all items above level 1, but you may still override this value for
+                every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemHoverCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the expanded items
+            above level 1 when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextHoverExpandedCssClass"/> property, which
+                applies to the TD tag where the text of the item is rendered. This class applies
+                globally to all items above level 1, but you may still override this value for
+                every individual PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ItemHoverExpandedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the items above level 1 when the items are selected.
+            </summary>
+            <remarks>
+                The class is applied to the TABLE tag of the item. You may set the
+                <see cref="P:Telerik.WebControls.RadPanelbar.ItemTextSelectedCssClass"/> property, which applies to
+                the TD tag where the text of the item is rendered. This class applies globally to
+                all items above level 1, but you may still override this value for every individual
+                PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemSelectedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the
+            collapsed items above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemCollapsedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. This class applies globally to all items above
+                level 1, but you may still override this value for every individual PanelItem with
+                its <see cref="P:Telerik.WebControls.PanelItem.ItemTextCollapsedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the expanded items above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemExpandedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. This class applies globally to all items above
+                level 1, but you may still override this value for every individual PanelItem with
+                its <see cref="P:Telerik.WebControls.PanelItem.ItemTextExpandedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextDisabledCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the disabled items above level 1.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemDisabledCssClass"/> property, which applies to
+                the TABLE tag of the whole item. This class applies globally to all items above
+                level 1, but you may still override this value for every individual PanelItem with
+                its <see cref="P:Telerik.WebControls.PanelItem.ItemTextDisabledCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextHoverCollapsedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the
+            collapsed items above level 1 when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemHoverCollapsedCssClass"/> property, which
+                applies to the TABLE tag of the whole item. This class applies globally to all
+                items above level 1, but you may still override this value for every individual
+                PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverCollapsedCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextHoverExpandedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the
+            expanded items above level 1 when the mouse is over them.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemHoverExpandedCssClass"/> property, which
+                applies to the TABLE tag of the whole item. This class applies globally to all
+                items above level 1, but you may still override this value for every individual
+                PanelItem with its <see cref="P:Telerik.WebControls.PanelItem.ItemTextHoverExpandedCssClass"/>
+                property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ItemTextSelectedCssClass">
+            <summary>
+            Gets or sets the Cascading Style Sheet (CSS) class applied to the text of the items above level 1 when they are selected.
+            </summary>
+            <remarks>
+                The class is applied to the TD where the text of the item is rendered. You may set
+                the <see cref="P:Telerik.WebControls.RadPanelbar.ItemSelectedCssClass"/> property, which applies to
+                the TABLE tag of the whole item. This class applies globally to all items above
+                level 1, but you may still override this value for every individual PanelItem with
+                its <see cref="P:Telerik.WebControls.PanelItem.ItemTextSelectedCssClass"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.RightToLeft">
+            <summary>
+            Gets or sets a value indicating whether the content direction will be
+            Right-to-Left.
+            </summary>
+            <remarks>
+            If no direction is specified, the direction from the container of the RadPanelbar
+            is applied.
+            </remarks>
+            <value>
+            	<strong>true</strong> if Right-to-Left content direction is used; otherwise,
+            <strong>false</strong>. The default is <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.SingleExpandedPanel">
+            <summary>
+            Gets or sets a value indicating whether an expanded panel is collapsed when
+            another panel at the same level is expanded.
+            </summary>
+            <value>
+            	<strong>true</strong> if an expanded panel collapses whenever another panel at
+            the same level is expanded; otherwise, <strong>false</strong>. The default is
+            <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.FullExpandedPanels">
+            <summary>
+            Gets or sets a value indicating whether the currently expanded panel will occupy
+            the whole empty space in the RadPanelbar.
+            </summary>
+            <remarks>
+                If this property is set to <strong>true</strong>, then
+                <see cref="P:Telerik.WebControls.RadPanelbar.SingleExpandedPanel"/> must also be set to <strong>true</strong>
+                and <see cref="P:Telerik.WebControls.RadPanelbar.Height"/> must be set to a fixed pixel height. Otherwise
+                <see cref="P:Telerik.WebControls.RadPanelbar.FullExpandedPanels"/> is ignored. This property causes the level 1
+                subgroups to occupy the whole empty area or if they are bigger in height a
+                scrollbar to appear. Also, if this property is taken in account all
+                <see cref="P:Telerik.WebControls.PanelItem.SubGroupHeight"/> properties for level 1 PanelItems are
+                ignored.
+            </remarks>
+            <value>
+            	<strong>true</strong> if the currently expanded panel occupies the whole empty
+            space in the RadPanelbar; otherwise, <strong>false</strong>. The default is
+            <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ExpandEffect">
+            <summary>
+            Gets or sets the visual effect that is applied when the PanelItems are expanded
+            or collapsed.
+            </summary>
+            <remarks>
+                This property applies globally to all PanelItems in the RadPanelbar. You can
+                override this setting individually for every PanelItem with its
+                <see cref="P:Telerik.WebControls.PanelItem.ExpandEffect"/> property. This effect is supported only
+                on Internet Explorer for Windows<sup>tm</sup>.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ExpandEffectSettings">
+            <summary>
+            Gets or sets the additional properties applied to the filter supplied in the ExpandEffect property.
+            </summary>
+            <remarks>
+            The properties must be separated with semicolon and be in the form name=value. For example:
+            "duration=0.5;orientation=vertical"
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Width">
+            <summary>
+            Gets or sets the width of the RadPanelbar control.
+            </summary>
+            <value>
+            A <strong>Unit</strong> that represents the width of the RadPanelbar. The default
+            is <strong>Unit.Empty</strong>
+            </value>
+            <remarks>The width may be defined both in fixed pixels or as a percentage.</remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Height">
+            <summary>
+            Gets or sets the height of the RadPanelbar control.
+            </summary>
+            <remarks>The height may be defined both in fixed pixels or as a percentage.</remarks>
+            <value>
+            A <strong>Unit</strong> that represents the height of the RadPanelbar. The
+            default is <strong>Unit.Empty</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.SpaceBetweenPanelItems">
+            <summary>Gets or sets the space in pixels between the level 1 PanelItems.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.BeforeClientPanelItemExpanded">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called
+            before a PanelItem is expanded.
+            </summary>
+            <remarks>
+            The JavaScript function that will handle this event must have one parameter, which is a reference to the client-side PanelItem object being expanded.
+            If the JavaScript function returns <b>false</b> the expanding of the PanelItem is cancelled.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AfterClientPanelItemExpanded">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called after a PanelItem is expanded.
+            </summary>
+            <remarks>
+                The JavaScript function that will handle this event must have one parameter, which
+                is a reference to the client-side PanelItem object being expanded. If the
+                JavaScript function returns <strong>false</strong>, no redirection to the
+                <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/> value of the expanding PanelItem would
+                occur even if the property is set.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.BeforeClientPanelItemCollapsed">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called before a PanelItem is collapsed.
+            </summary>
+            <remarks>
+            The JavaScript function that will handle this event must have one parameter, which is a reference to the client-side PanelItem object being collapsed.
+            If the JavaScript function returns <b>false</b> the collapsing of the PanelItem is cancelled.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AfterClientPanelItemCollapsed">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called after a PanelItem is collapsed.
+            </summary>
+            <remarks>
+                The JavaScript function that will handle this event must have one parameter, which
+                is a reference to the client-side PanelItem object being collapsed. If the
+                JavaScript function returns <strong>false</strong>, no redirection to the
+                <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/> value of the collapsing PanelItem would
+                occur even if the property is set.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.BeforeClientPanelItemClicked">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called before a PanelItem is clicked.
+            </summary>
+            <remarks>
+            The JavaScript function that will handle this event must have one parameter, which is a reference to the client-side PanelItem object being clicked.
+            If the JavaScript function returns false the clicking of the PanelItem is cancelled.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AfterClientPanelItemClicked">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called after a PanelItem is clicked.
+            </summary>
+            <remarks>
+                The JavaScript function that will handle this event must have one parameter, which
+                is a reference to the client-side PanelItem object being clicked. If the JavaScript
+                function returns <strong>false</strong>, no redirection to the NavigateUrl value of
+                the PanelItem would occur even if the <see cref="P:Telerik.WebControls.PanelItem.NavigateUrl"/>
+                property is set.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ClientMouseOver">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called when the mouse moves over the PanelItem.
+            </summary>
+            <remarks>
+            The JavaScript function that will handle this event must have one parameter,
+            which is a reference to the client-side PanelItem object which is hovered by the
+            mouse.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.ClientMouseOut">
+            <summary>
+            Gets or sets the name of the client-side JavaScript function that is called when the mouse moves out of the PanelItem.
+            </summary>
+            <remarks>
+            The JavaScript function that will handle this event must have one parameter, which is a reference to the client-side PanelItem object from which the mouse moves out.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.OptimizeForDisabledJavaScript">
+            <summary>
+            Gets or sets a value indicating whether the RadPanelbar is rendered in a way that
+            is compatible with browsers with disabled JavaScript.
+            </summary>
+            <value>
+            	<strong>true</strong> if the RadPanelbar is rendered for browsers with disabled
+            JavaScript; otherwise, <strong>false</strong>. The default is
+            <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.PreloadLiteralID">
+            <summary>
+            Gets or sets the ID of the asp:Literal control where any JavaScript preload code
+            for the images used in the RadPanelbar will be rendered.
+            </summary>
+            <remarks>
+            It is best to put this control in the HEAD tag of the page.
+            </remarks>
+            <example>
+            	<code lang="CS">
+            &lt;asp:Literal ID="PanelbarPreload1" Runat="server"&gt;&lt;/asp:Literal&gt;
+                </code>
+            </example>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.AppendDataBoundItems">
+            <summary>
+            Gets or sets a value indicating whether existing PanelItems in the RadPanelbar
+            should be cleared when binding to a data source.
+            </summary>
+            <value>
+            	<strong>true</strong> if existing PanelItems are removed whenever the user binds
+            to a data source; otherwise, <strong>false</strong>. The default is
+            <strong>false</strong>.
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.DataSource">
+            <summary>
+            Gets or sets the source containing the values used to populate the PanelItems
+            within the RadPanelbar.
+            </summary>
+            <remarks>
+                Use the <see cref="P:Telerik.WebControls.RadPanelbar.DataSource"/> property to specify the source of values to
+                bind to a RadPanelbar control. Allowed types for the data source are DataTable,
+                DataSet, DataView, and XmlDocument.
+            </remarks>
+            <value>
+            The default value is <strong>null</strong> (<strong>Nothing</strong> in Visual
+            Basic).
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.DataMember">
+            <summary>
+            Gets or sets the table name from a DataSet if the assigned DataSource is a
+            DataSet.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.DataFieldID">
+            <summary>
+            Gets or sets the name of the column that will be used to set the ID property of the PanelItems.
+            </summary>
+            <remarks>
+                Since RadPanelbar is a hierarchical control, when binding to a data source
+                (DataTable, DataSet, DataView) two columns that contain the ID and the parent ID
+                for each PanelItem must be defined using the <see cref="P:Telerik.WebControls.RadPanelbar.DataFieldID"/> and
+                <see cref="P:Telerik.WebControls.RadPanelbar.DataFieldParentID"/> properties.
+            </remarks>
+            <example>
+            	<code lang="CS" title="CS Example">
+            OleDbConnection OldDbCon = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Request.MapPath("Panelbar.mdb") + ";User ID=;Password=;");
+            OleDbDataAdapter adpPanelBar = new OleDbDataAdapter("SELECT * FROM Panelbar", OldDbCon);
+            DataSet dsPanelBar = new DataSet();
+            adpPanelBar.Fill(dsPanelBar);
+            RadPanelbar1.DataFieldID = "ID";
+            RadPanelbar1.DataFieldParentID = "ParentID";
+            RadPanelbar1.DataSource = dsPanelBar;
+            RadPanelbar1.DataBind();
+                </code>
+            	<code lang="VB" title="VB Example">
+            Dim OldDbCon As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Request.MapPath("Panelbar.mdb") + ";User ID=;Password=;")
+            Dim adpPanelBar As New OleDbDataAdapter("SELECT * FROM Panelbar", OldDbCon)
+            Dim dsPanelBar As New DataSet
+            adpPanelBar.Fill(dsPanelBar)
+            RadPanelbar1.DataFieldID = "ID"
+            RadPanelbar1.DataFieldParentID = "ParentID"
+            RadPanelbar1.DataSource = dsPanelBar
+            RadPanelbar1.DataBind()
+                </code>
+            </example>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.DataFieldParentID">
+            <summary>
+            Gets or sets the name of the column that will be used to indicate the ID of the parent PanelItem.
+            </summary>
+            <remarks>
+                Since RadPanelbar is a hierarchical control, when binding to a data source
+                (DataTable, DataSet, DataView) two columns that contain the ID and the parent ID
+                for each PanelItem must be defined using the <see cref="P:Telerik.WebControls.RadPanelbar.DataFieldID"/> and
+                <see cref="P:Telerik.WebControls.RadPanelbar.DataFieldParentID"/> properties.
+            </remarks>
+            <example>
+            	<code lang="CS" title="CS Example">
+            OleDbConnection OldDbCon = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Request.MapPath("Panelbar.mdb") + ";User ID=;Password=;"); 
+            OleDbDataAdapter adpPanelBar = new OleDbDataAdapter("SELECT * FROM Panelbar", OldDbCon); 
+            DataSet dsPanelBar = new DataSet(); 
+            adpPanelBar.Fill(dsPanelBar); 
+            RadPanelbar1.DataFieldID = "ID"; 
+            RadPanelbar1.DataFieldParentID = "ParentID"; 
+            RadPanelbar1.DataSource = dsPanelBar; 
+            RadPanelbar1.DataBind();
+                </code>
+            	<code lang="VB" title="VB Example">
+            Dim OldDbCon As New OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Request.MapPath("Panelbar.mdb") + ";User ID=;Password=;")
+            Dim adpPanelBar As New OleDbDataAdapter("SELECT * FROM Panelbar", OldDbCon)
+            Dim dsPanelBar As New DataSet
+            adpPanelBar.Fill(dsPanelBar)
+            RadPanelbar1.DataFieldID = "ID"
+            RadPanelbar1.DataFieldParentID = "ParentID"
+            RadPanelbar1.DataSource = dsPanelBar
+            RadPanelbar1.DataBind()
+                </code>
+            </example>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.DataFieldParentRootValue">
+            <summary>
+            Gets or sets the value of the ParentID field that will be treated as a "no
+            parent" value, making the record with this value a level 1 PanelItem.
+            </summary>
+            <remarks>
+            By default this value is <strong>null</strong>, which means records with a
+            <strong>null</strong> value in their ParentID column will be rendered as level 1
+            PanelItems.
+            </remarks>
+            <value>
+            The default is <strong>null</strong> (<strong>Nothing</strong> in Visual
+            Basic).
+            </value>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.SelectedPanelItem">
+            <summary>
+            Gets or sets the currently selected PanelItem in the RadPanelbar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.InitJavaScriptCode">
+            <summary>Gets the client-side JavaScript initialization code for the RadPanelbar.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Controls">
+            <summary>Gets the Controls collection of the RadPanelbar.</summary>
+            <remarks>
+                This collection contains only PanelItemTemplates that are linked to a PanelItem
+                with the <see cref="P:Telerik.WebControls.PanelItem.TemplateID"/> property.
+            </remarks>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.JavaScriptFiles">
+            <summary>Raises the PreRender event.</summary>
+            <param name="e">
+                An <see cref="T:System.EventArgs">EventArgs</see> object that contains the event
+                data.
+            </param>
+            
+        </member>
+        <member name="E:Telerik.WebControls.RadPanelbar.PanelItemExpand">
+            <summary>Occurs when a PanelItem with child PanelItems is expanded.</summary>
+        </member>
+        <member name="E:Telerik.WebControls.RadPanelbar.PanelItemCollapse">
+            <summary>Occurs when a PanelItem with child PanelItems is collapsed.</summary>
+        </member>
+        <member name="E:Telerik.WebControls.RadPanelbar.PanelItemClick">
+            <summary>Occurs when a PanelItem without child PanelItems is clicked.</summary>
+        </member>
+        <member name="E:Telerik.WebControls.RadPanelbar.PanelItemDataBound">
+            <summary>Occurs when a PanelItem is databound.</summary>
+        </member>
+        <member name="E:Telerik.WebControls.RadPanelbar.PanelItemCreated">
+            <summary>Occurs when a PanelItem is databound.</summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Description">
+            <summary>
+            Gets or sets a brief phrase that summarizes what a control does, for use in ToolTips and catalogs of WebPart controls.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Title">
+            <summary>
+            Gets or sets the title of a WebPart control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.Subtitle">
+            <summary>
+            Gets a string that is concatenated with the Title property value to form a complete title for a WebPart control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.TitleIconImageUrl">
+            <summary>
+            Gets or sets the URL to an image used to represent a Web Parts control in the control's own title bar.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.TitleUrl">
+            <summary>
+            Gets or sets a URL to supplemental information about a WebPart control.
+            </summary>
+        </member>
+        <member name="P:Telerik.WebControls.RadPanelbar.CatalogIconImageUrl">
+            <summary>
+            Gets or sets the URL to an image that represents a WebPart control in a catalog of controls.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.RadPanelbar.RadPanelbarClickEventHandler">
+            <summary>
+                Represents the method that will handle the <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemExpand"/>,
+                <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemCollapse"/> and <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemClick"/> events
+                of the RadPanelbar control.
+            </summary>
+            <remarks>
+            	<para>
+                    When you create a <see cref="T:Telerik.WebControls.RadPanelbar.RadPanelbarClickEventHandler"/> delegate, you
+                    identify the method that will handle the appropriate event. To associate the
+                    event with your event handler, add an instance of the delegate to the event.
+                    The event handler is called whenever the event occurs, unless you remove the
+                    delegate.
+                </para>
+            </remarks>
+            <param name="sender">The source of the event.</param>
+            <param name="args">A <see cref="T:Telerik.WebControls.RadPanelbarClickEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="T:Telerik.WebControls.RadPanelbar.RadPanelbarPanelItemDataBoundEventHandler">
+            <summary>
+                Represents the method that will handle the <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemDataBound"/>
+                event of the RadPanelbar control.
+            </summary>
+            <remarks>
+            	<para>
+                    The <see cref="E:Telerik.WebControls.RadPanelbar.PanelItemDataBound"/> event is raised whenever a PanelItem
+                    is databound.
+                </para>
+            	<para>
+                    When you create a <see cref="T:Telerik.WebControls.RadPanelbar.RadPanelbarPanelItemDataBoundEventHandler"/>
+                    delegate, you identify the method that will handle the event. To associate the
+                    event with your event handler, add an instance of the delegate to the event.
+                    The event handler is called whenever the event occurs, unless you remove the
+                    delegate.
+                </para>
+            </remarks>
+            <param name="sender">The source of the event.</param>
+            <param name="args">
+                A <see cref="T:Telerik.WebControls.RadPanelbarPanelItemDataBoundEventArgs"/> that contains the event
+                data.
+            </param>
+        </member>
+        <member name="T:Telerik.WebControls.Design.RadPanelbarDesigner">
+            <summary>
+            Summary description for RadPanelbarDesigner.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.Design.RadPanelbarDesigner.#ctor">
+            <summary>
+            Creates an instance of RadPanelbarDesigner.
+            </summary>
+        </member>
+        <member name="M:Telerik.WebControls.Design.RadPanelbarDesigner.OnBuildRadPanelbar">
+            <summary>
+            Launches the editor for the RadPanelbar.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.Design.RadPanelbarEditor">
+            <summary>
+            The editor for the RadPanelbar items.
+            </summary>
+        </member>
+        <member name="T:Telerik.WebControls.Design.RadPanelbarEditorForm">
+            <summary>
+            The Windows form that hosts the RadPanelbar editor.
+            </summary>
+        </member>
+    </members>
+</doc>

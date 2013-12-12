@@ -1,0 +1,408 @@
+
+html
+{
+    height:100%;
+    
+    }
+    
+ body
+{
+    height:100%;
+    
+    }
+
+.anythingSlider .wrapper{width:995px;overflow:auto;height:457px;margin:0;position:absolute; }
+.anythingSlider .wrapper ul{width:9999px;list-style:none;position:absolute;top:0;left:0;margin:0;}
+.anythingSlider ul li{display:block;float:left;padding:0;height:800px;width:995px;margin:0;border:solid 0px #ff6600}
+#thumbNav{position:relative;top:427px; left:5px;}
+#thumbNav a{color:#fff;font:11px/18px;Georgia,Serif; display:inline-block;padding:0px 8px;height:18px;margin:0 5px 0 0;background:url(../images/cellshade.png) repeat-x;text-align:center;-moz-border-radius-bottomleft:5px;-moz-border-radius-bottomright:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;}
+#thumbNav a:hover{color:#fff;font:11px/18px;Georgia,Serif;display:inline-block;padding:2px 8px;height:18px;margin:0 5px 0 0;background:url(../images/cellshade2.png) repeat-x;}
+#thumbNav a.cur{color:#fff;font:11px/18px;Georgia,Serif;display:inline-block;padding:2px 8px;height:18px;margin:0 5px 0 0;background:url(../images/cellshade2.png) repeat-x;}
+.anythingSlider .wrapper ul ul{position:static;margin:0;background:none;overflow:visible;width:auto;border:0;}
+.anythingSlider .wrapper ul ul li{float:none;height:auto;width:auto;background:none;}
+html, body{height:100%}
+
+
+#fullheight{height:100%}
+
+		
+*
+{
+	font-family:Arial;
+	}	
+.conteudo
+{	background-image:url(../imagens/bgconteudo.jpg);
+ 	background-repeat:repeat-x;
+ 	
+ 	background-color:#FFFFFF;
+ 
+	
+	}
+
+.tituloHome
+{
+	color:#ffffff;
+	font-size:18px;
+	text-align:left;
+	padding-left:15px;
+	font-weight:bold;
+	line-height:18px;
+	height:30px;
+	line-height:30px;
+	
+	}
+.atividades
+{
+	background-color:#55108c;
+
+	
+	}
+.noticias
+{
+	background-color:#00b4c2;
+
+	
+	}	
+						
+.dicas
+{
+	background-color:#4b8b2e;
+	
+	width:229px;
+	white-space:nowrap;
+
+	
+	}		
+		
+		
+.ImagemDestaque
+{
+	  float:left;
+    margin:0 5px 5px 0;
+    
+
+	
+	
+	
+	}	
+.espacoImage 
+{
+	padding-right:5px;
+	padding-bottom:5px;
+	
+	}	
+
+hr
+{
+	
+	text-align:left;
+	}
+.linhaTop
+{
+	border-top:1px solid #5d5d5d;
+	
+	}
+.TDPesquisaDois
+{
+	color:#5a5a5a;
+	
+	}	
+.menuSite
+{
+	background-image:url(../imagens/bgMenu.png);
+	width:950px;
+	height:73px;
+	background-repeat:no-repeat;
+	
+	}	
+.btComum2
+{
+	
+	font-family:Arial;
+         font-size:8pt;
+         color:#ffffff;
+          background-color:Transparent;
+          background-image:url(../images/buttonPesquisa.jpg);
+          background-repeat:no-repeat;
+         width:60px; 
+         height:29px;
+          border:0; 
+          cursor:hand;
+         
+        
+          }	
+	
+	
+	.pesquisainput
+	{
+	    border:1px solid #e6e6e6 ;
+	    height:26px;
+	     padding-right:5px;
+	     padding-left:5px;
+	    
+	    
+	    
+	    }
+	    
+	    	.pesquisainputS
+	{
+	    border:1px solid #e6e6e6;
+	    padding:4px 5px 4px 5px ;
+	    margin-right:5px;
+	 
+	    
+	  
+	    
+	    
+	    
+	    }
+.Pesquisa
+{
+		
+	background:transparent;
+	background-image:url(../images/border.png) ;
+	background-repeat:no-repeat;
+	padding-left:10px;
+	margin-left:0px;
+	text-align:left;
+	font-family:Arial;
+	color:#fff;
+	border: 0px;
+	height:20px;
+	padding-top:5px;
+	
+	}
+
+.vtop
+{
+	vertical-align:top;
+	
+	
+	}	
+#cemP
+{
+	height:100%;
+	
+	
+	}
+		
+.SubtituloN
+{
+		color:#fff;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family:Arial;
+	font-size:15px;
+	
+	}
+a.DestaqueT:link  
+{
+	font-family:Arial;
+	font-size:13px;
+	text-align:left;
+	color:#fff;
+	
+	}
+	
+a.DestaqueT:active  
+{
+	font-family:Arial;
+	font-size:13px;
+	text-align:left;
+	color:#fff;
+	
+	}	
+	
+	
+a.DestaqueT:visited 
+{
+font-family:Arial;
+	font-size:13px;
+	text-align:left;
+	color:#fff;
+	
+	}		
+.ResenhaN
+{
+	text-align:justify;
+	color:#fff;
+	font-family:Arial;
+	font-size:13px;
+	
+	}
+.ResenhaN:hover
+{
+	text-align:justify;
+	color:#fff;
+	font-family:Arial;
+	font-size:13px;
+	
+	}	
+.resenha a 
+{
+	text-align:justify;
+	color:#fff;
+	font-family:Arial;
+	font-size:18px;
+	background-color:#ff6600;
+	
+	}			
+	
+.hrHome
+	{
+		border: 0px 1px 0px 0px;
+         width:100%
+		
+		}
+	.rodape
+	{
+		font-family:Arial;
+		font-size:15px;
+		color:#fff;
+		height:30px;
+		padding-top:10px;
+		
+		}
+	{
+		padding-right:5px;
+		padding-bottom:5px;
+		
+		
+		}
+		
+	.fonttexto
+	{
+	    color:#666;
+	    
+	    }	
+	.TDPesquisa
+  {
+  	font-family:Arial;
+  	font-size:25px;
+  	color:#5a5a5a;
+  	text-transform:uppercase;
+  	margin-top:10px;
+  	margin-bottom:10px;
+  	
+  	
+  	}  	
+			
+	 .btComum3
+{
+	
+	font-family:Arial;
+         font-size:8pt;
+         color:#ffffff;
+          background-color:Transparent;
+          background-image:url(../images/btPesquisa.png);
+         width:27px; 
+         height:27px;
+          border:0; 
+          cursor:hand;
+          width:26px;
+          background-repeat:no-repeat;
+          
+       
+          
+          
+        
+          }
+.navegacaoGaleria
+{
+	color:#ffffff;
+	background-color:#565656;
+	line-height:20px;
+	height:20px;
+	padding-left:5px;
+	
+	}          
+          a{	font-weight:700; text-decoration:none; outline:none;}
+a:hover{color:#777;text-decoration:none;outline:none;}
+
+ a:link
+ {
+ 	text-decoration:none;
+ 	color:#666;
+ 	}         
+          	
+a:hover { 
+    
+text-decoration: underline;  
+    
+    
+}
+.Cselect select
+{
+	
+	border:0px 0px 0px 0px ;
+	height:22px;
+	background-color:#ff6600;
+	padding:5px 5px 5px 5px;
+	line-height:30px;   
+	
+	}	
+.Cinput
+{
+	
+	border:0px 0px 0px 0px;
+	height:22px;
+	
+	}
+.btComum
+{
+	background-color:#565656;
+	border:0px;
+	color:#fff;
+	height:22px;
+	padding-left:5px;
+	padding-right:5px;
+	
+	}		
+		
+
+	.Newsletter 
+	{
+		background-image:url(../images/Newsletter.jpg);
+		background-position:right;
+		width:365px;
+		height:100px;
+		vertical-align:bottom;
+		padding-left:5px;
+		padding-top:55px;
+		background-repeat:no-repeat;
+		
+		
+		
+		}
+			
+	.Newsletter 
+	{
+		background-image:url(../images/Newsletter.jpg);
+		background-position:right;
+		width:365px;
+		height:100px;
+		vertical-align:bottom;
+		padding-left:5px;
+		padding-top:55px;
+		background-repeat:no-repeat;
+		
+		
+		
+		}
+	.NewsletterInput
+	{
+		border:0px;
+		width:187px;
+		height:22px;
+		line-height:22px;
+		color:#666666;
+		padding-left:3px;
+		background-color:#e4e4e4;
+		border-radius:5px;
+		margin-bottom:2px;
+		
+		
+		border:1px solid #4f4f4f;
+		
+		
+		}			

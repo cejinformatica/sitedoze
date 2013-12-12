@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "educarsolucoes.com.br", "http://localhost/educarsolucoes.com.br", "{B4B94AED-E3CC-4356-AA29-92FA1DF21E1E}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/educarsolucoes.com.br", ELQXAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/educarsolucoes.com.br"
+		Debug.AspNetCompiler.PhysicalPath = "..\educarsolucoes.com.br\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\educarsolucoes.com.br\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/educarsolucoes.com.br"
+		Release.AspNetCompiler.PhysicalPath = "..\educarsolucoes.com.br\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\educarsolucoes.com.br\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\educarsolucoes.com.br\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccWebProject0 = true
+		SccProjectUniqueName0 = http://localhost/educarsolucoes.com.br
+		SccProjectName0 = \u0022$/educarsolucoes.com.br\u0022,\u0020ELQXAAAA
+		SccLocalPath0 = C:\\inetpub\\wwwroot\\educarsolucoes.com.br
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice0 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4B94AED-E3CC-4356-AA29-92FA1DF21E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B94AED-E3CC-4356-AA29-92FA1DF21E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
